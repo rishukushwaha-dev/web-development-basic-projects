@@ -1,0 +1,386 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="Student Information System.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>SIS Admin Panel</h2>
+      <ul>
+        <li class="nav-item active" data-section="dashboard">Dashboard</li>
+        <li class="nav-item" data-section="students">Students</li>
+        <li class="nav-item" data-section="courses">Courses</li>
+        <li class="nav-item" data-section="attendance">Attendance</li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <section id="dashboard" class="section active">
+        <header>
+          <h1>Dashboard Overview</h1>
+          <p>Welcome Rishu!</p>
+        </header>
+        <div class="cards">
+          <div class="card">
+            <h3>Total Students</h3>
+            <p id="total-students">0</p>
+          </div>
+          <div class="card">
+            <h3>Total Courses</h3>
+            <p id="total-courses">98+</p>
+          </div>
+          <div class="card">
+            <h3>Attendance Today</h3>
+            <p id="attendance-today">0%</p>
+          </div>
+        </div>
+        <div class="content-section">
+          <h3>Recent Students</h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sr No.</th>
+                  <th>Name</th>
+                  <th>Roll</th>
+                  <th>Course</th>
+                </tr>
+              </thead>
+              <tbody id="dashboard-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="students" class="section">
+        <header><h1>Student Management</h1></header>
+        <div class="content-section">
+          <h3>Manage Students</h3>
+          <br />
+          <div class="form-group">
+            <input
+              type="text"
+              id="student-name"
+              placeholder="Student Name"
+              required
+            />
+            <input
+              type="text"
+              id="student-roll"
+              placeholder="Roll Number"
+              required
+            />
+            <select id="student-course" required>              <option value="">Select Course</option>
+              <option value="B.A.">B.A.</option>
+              <option value="B.Sc.">B.Sc.</option>
+              <option value="B.Com.">B.Com.</option>
+              <option value="BBA">BBA</option>
+              <option value="BCA">BCA</option>
+              <option value="B.Tech">B.Tech</option>
+              <option value="BE">B.E.</option>
+              <option value="B.Ed">B.Ed</option>
+              <option value="LLB">LLB</option>
+              <option value="MBBS">MBBS</option>
+              <option value="BDS">BDS</option>
+              <option value="BAMS">BAMS</option>
+              <option value="BHMS">BHMS</option>
+              <option value="B.Pharm">B.Pharm</option>
+              <option value="BPT">BPT</option>
+              <option value="BNYS">BNYS</option>
+              <option value="BUMS">BUMS</option>
+              <option value="B.VSc.">B.VSc.</option>
+              <option value="B.Arch">B.Arch</option>
+              <option value="B.Des">B.Des</option>
+              <option value="BFA">BFA</option>
+              <option value="BHM">BHM</option>
+              <option value="BTTM">BTTM</option>
+              <option value="BMS">BMS</option>
+              <option value="BFM">BFM</option>
+              <option value="BBM">BBM</option>
+              <option value="BBA LLB">BBA LLB</option>
+              <option value="BA LLB">BA LLB</option>
+              <option value="B.Sc. Nursing">B.Sc. Nursing</option>
+              <option value="GNM">GNM</option>
+              <option value="ANM">ANM</option>
+              <option value="Diploma">Diploma</option>
+              <option value="ITI">ITI</option>
+              <option value="M.A.">M.A.</option>
+              <option value="M.Sc.">M.Sc.</option>
+              <option value="M.Com.">M.Com.</option>
+              <option value="MBA">MBA</option>
+              <option value="MCA">MCA</option>
+              <option value="M.Tech">M.Tech</option>
+              <option value="ME">M.E.</option>
+              <option value="M.Ed">M.Ed</option>
+              <option value="LLM">LLM</option>
+              <option value="MD">MD</option>
+              <option value="MS">MS</option>
+              <option value="MDS">MDS</option>
+              <option value="M.Pharm">M.Pharm</option>
+              <option value="MPT">MPT</option>
+              <option value="M.Arch">M.Arch</option>
+              <option value="M.Des">M.Des</option>
+              <option value="Ph.D.">Ph.D.</option>
+              <option value="PG Diploma">PG Diploma</option>
+              <option value="CA">CA</option>
+              <option value="CS">CS</option>
+              <option value="ICWA/CMA">ICWA/CMA</option>
+              <option value="CFA">CFA</option>
+              <option value="FRM">FRM</option>
+              <option value="Data Science">Data Science</option>
+              <option value="AI & ML">AI & ML</option>
+              <option value="Cyber Security">Cyber Security</option>
+              <option value="Cloud Computing">Cloud Computing</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Graphic Design">Graphic Design</option>
+              <option value="Fashion Design">Fashion Design</option>
+              <option value="Interior Design">Interior Design</option>
+              <option value="Journalism & Mass Comm">Journalism & Mass Comm</option>
+              <option value="Event Management">Event Management</option>
+              <option value="Hospitality & Tourism">Hospitality & Tourism</option>
+              <option value="Aviation">Aviation</option>
+              <option value="Economics">Economics</option>
+              <option value="Psychology">Psychology</option>
+              <option value="Sociology">Sociology</option>
+              <option value="Political Science">Political Science</option>
+              <option value="History">History</option>
+              <option value="Geography">Geography</option>
+              <option value="English">English Literature</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Biology">Biology</option>
+              <option value="Zoology">Zoology</option>
+              <option value="Botany">Botany</option>
+              <option value="Microbiology">Microbiology</option>
+              <option value="Biotechnology">Biotechnology</option>
+              <option value="Environmental Science">Environmental Science</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Forestry">Forestry</option>
+              <option value="Marine Science">Marine Science</option>
+              <option value="Veterinary Science">Veterinary Science</option>
+              <option value="Library & Info Science">Library & Info Science</option>
+              <option value="Physical Education">Physical Education</option>
+              <option value="Fine Arts">Fine Arts</option>
+              <option value="Music">Music</option>
+              <option value="Theater Arts">Theater Arts</option>
+              <option value="Social Work">Social Work</option>
+              <option value="Public Administration">Public Administration</option>
+              <option value="International Relations">International Relations</option>
+              <option value="Others">Others</option><option value="Certificate Course">Certificate Course</option></select>
+            <input type="email" id="student-email" placeholder="Email" />
+            <input type="tel" id="student-phone" placeholder="Phone" />
+          </div>
+          <div class="form-actions">
+            <button id="add-student-btn" onclick="addStudent()">
+              Add Student
+            </button>
+            <button
+              id="update-student-btn"
+              onclick="updateStudent()"
+              style="display: none; background-color: #3498db"
+            >
+              Update
+            </button>
+            <button onclick="resetForm()" style="background-color: #95a5a6">
+              Cancel
+            </button>
+            <button
+              onclick="clearAllStudents()"
+              style="background-color: #e74c3c"
+            >
+              Remove All Students
+            </button>
+          </div>
+          <div class="search-box">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search by name, roll, or course..."
+              onkeyup="searchStudents()"
+            />
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sr</th>
+                  <th>Name</th>
+                  <th>Roll</th>
+                  <th>Course</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="student-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="courses" class="section">
+        <header><h1>Courses</h1></header>
+        <div class="content-section">
+          <h3>Available Courses (98+)</h3>
+          <ul class="course-list">              
+          <li>B.A.</li>
+          <li>B.Sc.</li>
+          <li>B.Com.</li>
+          <li>BBA</li>
+          <li>BCA</li>
+          <li>B.Tech</li>
+          <li>B.E.</li>
+          <li>B.Ed</li>
+          <li>LLB</li>
+          <li>MBBS</li>
+          <li>BDS</li>
+          <li>BAMS</li>
+          <li>BHMS</li>
+          <li>B.Pharm</li>
+          <li>BPT</li>
+          <li>BNYS</li>
+          <li>BUMS</li>
+          <li>B.VSc.</li>
+          <li>B.Arch</li>
+          <li>B.Des</li>
+          <li>BFA</li>
+          <li>BHM</li>
+          <li>BTTM</li>
+          <li>BMS</li>
+          <li>BFM</li>
+          <li>BBM</li>
+          <li>BBA LLB</li>
+          <li>BA LLB</li>
+          <li>B.Sc. Nursing</li>
+          <li>GNM</li>
+          <li>ANM</li>
+          <li>Diploma</li>
+          <li>ITI</li>
+          <li>M.A.</li>
+          <li>M.Sc.</li>
+          <li>M.Com.</li>
+          <li>MBA</li>
+          <li>MCA</li>
+          <li>M.Tech</li>
+          <li>M.E.</li>
+          <li>M.Ed</li>
+          <li>LLM</li>
+          <li>MD</li>
+          <li>MS</li>
+          <li>MDS</li>
+          <li>M.Pharm</li>
+          <li>MPT</li>
+          <li>M.Arch</li>
+          <li>M.Des</li>
+          <li>Ph.D.</li>
+          <li>PG Diploma</li>
+          <li>CA</li>
+          <li>CS</li>
+          <li>ICWA/CMA</li>
+          <li>CFA</li>
+          <li>FRM</li>
+          <li>Data Science</li>
+          <li>AI & ML</li>
+          <li>Cyber Security</li>
+          <li>Cloud Computing</li>
+          <li>Digital Marketing</li>
+          <li>Graphic Design</li>
+          <li>Fashion Design</li>
+          <li>Interior Design</li>
+          <li>Journalism & Mass Comm</li>
+          <li>Event Management</li>
+          <li>Hospitality & Tourism</li>
+          <li>Aviation</li>
+          <li>Economics</li>
+          <li>Psychology</li>
+          <li>Sociology</li>
+          <li>Political Science</li>
+          <li>History</li>
+          <li>Geography</li>
+          <li>English Literature</li>
+          <li>Mathematics</li>
+          <li>Physics</li>
+          <li>Chemistry</li>
+          <li>Biology</li>
+          <li>Zoology</li>
+          <li>Botany</li>
+          <li>Microbiology</li>
+          <li>Biotechnology</li>
+          <li>Environmental Science</li>
+          <li>Agriculture</li>
+          <li>Forestry</li>
+          <li>Marine Science</li>
+          <li>Veterinary Science</li>
+          <li>Library & Info Science</li>
+          <li>Physical Education</li>
+          <li>Fine Arts</li>
+          <li>Music</li>
+          <li>Theater Arts</li>
+          <li>Social Work</li>
+          <li>Public Administration</li>
+          <li>International Relations</li>
+ <li>Others</li><li>Certificate Course</li></ul>
+        </div>
+      </section>
+      <section id="attendance" class="section">
+        <header><h1>Daily Attendance</h1></header>
+        <div class="content-section">
+          <div class="attendance-header">
+            <div class="att-controls">
+              <label for="attendance-date">Select Date:</label>
+              <input type="date" id="attendance-date" />
+              <button
+                class="action-btn edit-btn"
+                onclick="loadAttendanceForDate()"
+              >
+                Load
+              </button>
+              <button
+                class="action-btn edit-btn"
+                onclick="saveAttendance()"
+                style="background-color: #27ae60"
+              >
+                Save Attendance
+              </button>
+              <button
+                class="action-btn"
+                onclick="markAllPresent()"
+                style="background-color: #2ecc71; color: white"
+              >
+                Mark All Present
+              </button>
+              <button
+                class="action-btn"
+                onclick="markAllAbsent()"
+                style="background-color: #e74c3c; color: white"
+              >
+                Mark All Absent
+              </button>
+            </div>
+            <div id="att-summary" class="att-summary"></div>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sr No.</th>
+                  <th>Student Name</th>
+                  <th>Roll Number</th>
+                  <th>Course</th>
+                  <th>Present</th>
+                  <th>Absent</th>
+                </tr>
+              </thead>
+              <tbody id="attendance-table-body"></tbody>
+            </table>
+          </div>
+          <p style="margin-top: 10px; color: #7f8c8d; font-size: 13px">
+            Note: Attendance is saved per date in browser (localStorage).
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src="Student Information System.js"></script>
+  </body>
+</html>
