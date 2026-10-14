@@ -318,4 +318,3 @@ table tbody tr:hover {
   font-size: 13px;
 }
 .course-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;max-height:450px;overflow-y:auto;padding-right:5px}.course-list li{flex:1 1 180px;padding:10px 12px;background:#f8f9fa;border-left:4px solid #1abc9c;border-radius:4px}
-

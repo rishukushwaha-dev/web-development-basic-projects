@@ -69,7 +69,10 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 👤 **Rishu Kushwaha**
 
 📧 **Email:** [rishukushwaha542@gmail.com](mailto:rishukushwaha542@gmail.com)  
+<<<<<<< HEAD
 🌐 **GitHub:** [@code-with-rishu](https://github.com)
 =======
 
 >>>>>>> 756eb22499dfca28821e536ae8066c856893eb47
+=======
+>>>>>>> 1f18d051702d5ac0800ddbd694feeddb4bd71aa4
