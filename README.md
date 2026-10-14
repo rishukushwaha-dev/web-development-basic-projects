@@ -72,9 +72,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 🌐 **GitHub:** [@code-with-rishu](https://github.com)
 =======
 
-> > > > > > > # 756eb22499dfca28821e536ae8066c856893eb47
-> > > > > > >
-> > > > > > > > > Temporary merge branch 2
 
 # 🚀 HTML5, CSS3 & JavaScript Projects Collection
 
