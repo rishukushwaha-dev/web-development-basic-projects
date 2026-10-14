@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 HTML5, CSS3 & JavaScript Projects Collection
 
 Welcome to my **HTML CODES** repository! This is a comprehensive collection of **10+ interactive Web Applications,  Games, Utility Tools, and Professional Templates** that i built while mastering modern web development.
@@ -69,3 +70,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 📧 **Email:** [rishukushwaha542@gmail.com](mailto:rishukushwaha542@gmail.com)  
 🌐 **GitHub:** [@code-with-rishu](https://github.com)
+=======
+
+>>>>>>> 756eb22499dfca28821e536ae8066c856893eb47
