@@ -68,4 +68,3 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 👤 **Rishu Kushwaha**
 
 📧 **Email:** [rishukushwaha542@gmail.com](mailto:rishukushwaha542@gmail.com)  
-🌐 **GitHub:** [@code-with-rishu](https://github.com)
